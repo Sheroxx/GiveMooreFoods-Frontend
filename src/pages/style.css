@@ -1,0 +1,67 @@
+h1 { 
+    color:#3a4f7f;
+    font-size:48px;
+}
+
+.search-icon {
+    border: 1px transparent;
+    background-color: rgb(226, 226, 226);
+    padding:20px;
+    border-radius: 30%;
+}
+
+.search-icon:active{
+    background-color: #fff;
+}
+
+.search-icon:hover{
+    background-color: #fff;
+}
+
+.cat-box {
+    border-radius: 50%;
+    border:none;
+    background-color: rgba(217, 224, 255, 0.2);
+    box-shadow: 1px 1px 10px 1px #e0e0e0;
+    color:#3a4f7f;
+
+}
+
+.cat-box:active {
+    background-color: #fff;
+}
+
+.cat-box {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.cat-box:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.cat-box:hover {
+    background-color: #fff;
+}
+
+.menu-list-box {
+    border: none;
+    background-color: #eceaea;
+    box-shadow: 1px 1px 10px 1px #c9c9c9;
+}
+
+.crd-title {
+    color:#3a4f7f;
+    
+}
+
+.btn-cst {
+    background-color: #3a4f7f;
+    
+}
