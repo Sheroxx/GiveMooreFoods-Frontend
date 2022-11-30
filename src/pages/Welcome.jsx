@@ -4,18 +4,36 @@ import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faSliders } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import api from '../api/api';
 
 
 
 
 function ContainerPage() {
+
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        getCategoryAPI();
+    }, []);
+
+    function getCategoryAPI() {
+        api.get("/foods")
+        .then((resp) => {
+            console.log(resp.data);
+            if(resp.data.success) {
+                
+            }
+        })
+    }
+
     return (
         <Container>
             <Row className='mb-5'>
